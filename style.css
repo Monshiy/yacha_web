@@ -1,13 +1,13 @@
 :root {
-    --bg-color: #0d0d12;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0b0;
-    --accent-color: #6366f1;
-    --accent-glow: rgba(99, 102, 241, 0.4);
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --border-color: rgba(255, 255, 255, 0.1);
-    --gradient-start: #6366f1;
-    --gradient-end: #a855f7;
+    --bg-color: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --accent-color: #4f46e5;
+    --accent-glow: rgba(79, 70, 229, 0.15);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --border-color: rgba(0, 0, 0, 0.05);
+    --gradient-start: #4f46e5;
+    --gradient-end: #9333ea;
     --font-family: 'Outfit', sans-serif;
 }
 
@@ -41,8 +41,15 @@ body {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.6; }
-    100% { transform: scale(1.1); opacity: 0.4; }
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0.4;
+    }
 }
 
 /* Navbar */
@@ -57,7 +64,8 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #fff, #a0a0b0);
+    background: linear-gradient(135deg, #1e293b, #475569);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -111,6 +119,7 @@ h1 {
 
 .gradient-text {
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -162,7 +171,7 @@ h1 {
     font-size: 1.1rem;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px -10px var(--accent-glow);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:hover {
@@ -195,7 +204,7 @@ h1 {
     backdrop-filter: blur(20px);
     overflow: hidden;
     position: relative;
-    box-shadow: 0 50px 100px -20px rgba(0,0,0,0.5);
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.15);
     transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
     transition: transform 0.5s ease;
 }
@@ -216,9 +225,18 @@ h1 {
     height: 12px;
     border-radius: 50%;
 }
-.red { background: #ff5f56; }
-.yellow { background: #ffbd2e; }
-.green { background: #27c93f; }
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
 
 .card-body {
     padding: 2rem;
@@ -235,7 +253,7 @@ h1 {
 .mockup-sidebar {
     width: 60px;
     height: 80%;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
 
@@ -249,14 +267,14 @@ h1 {
 .mockup-header {
     height: 40px;
     width: 60%;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0, 0, 0, 0.08);
     border-radius: 8px;
 }
 
 .mockup-row {
     height: 20px;
     width: 100%;
-    background: rgba(255,255,255,0.03);
+    background: rgba(0, 0, 0, 0.03);
     border-radius: 6px;
 }
 
@@ -267,14 +285,14 @@ h1 {
 /* Floating Elements */
 .float-card {
     position: absolute;
-    background: rgba(30,30,35,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border: 1px solid var(--border-color);
     padding: 0.75rem 1.25rem;
     border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -296,18 +314,37 @@ h1 {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Responsive */
@@ -317,19 +354,19 @@ h1 {
         text-align: center;
         gap: 3rem;
     }
-    
+
     .text-content {
         max-width: 100%;
     }
-    
+
     .features-grid {
         justify-content: center;
     }
-    
+
     .cta-container {
         align-items: center;
     }
-    
+
     h1 {
         font-size: 2.5rem;
     }
