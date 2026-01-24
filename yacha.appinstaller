@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+    Uri="https://tudominio.com/app/yacha.appinstaller"
+    Version="1.0.0.0"
+    xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
+    <MainPackage
+        Name="YachaApp"
+        Publisher="CN=TuNombreDeEditor"
+        Version="1.0.0.0"
+        Uri="https://tudominio.com/app/yacha.msix" />
+    <UpdateSettings>
+        <OnLaunch 
+            HoursBetweenUpdateChecks="0" />
+    </UpdateSettings>
+</AppInstaller>
+<!-- 
+    INSTRUCCIONES IMPORTANTES:
+    1. Reemplaza 'https://tudominio.com/app/' con la URL REAL donde alojarás estos archivos.
+    2. Asegúrate de que el 'Publisher' coincida EXACTAMENTE con el certificado de firma de tu app.
+    3. Asegúrate de que el nombre del archivo .msix coincida.
+-->
