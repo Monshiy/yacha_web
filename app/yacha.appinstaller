@@ -5,9 +5,9 @@
     xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
     <MainPackage
         Name="YachaApp"
-        Publisher="CN=TuNombreDeEditor"
+        Publisher="CN=Lumy"
         Version="1.0.0.0"
-        Uri="https://yacha.pe/app/yacha.msix" />
+        Uri="https://yacha.pe/app/Lumy.msix" />
     <UpdateSettings>
         <OnLaunch 
             HoursBetweenUpdateChecks="0" />
