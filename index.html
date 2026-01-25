@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --bg-dark: #0f172a;
-            --text-light: #f8fafc;
-            --accent-cyan: #06b6d4;
-            --accent-purple: #8b5cf6;
+            /* Light Theme Variables */
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --accent-cyan: #0891b2;
+            /* Darker cyan for light bg */
+            --accent-purple: #4f46e5;
+            --card-border: #e2e8f0;
+            --card-bg: #ffffff;
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: var(--text-light);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
             font-family: 'Outfit', sans-serif;
             margin: 0;
             display: flex;
@@ -37,7 +42,7 @@
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: -0.02em;
-            color: white;
+            color: var(--text-dark);
         }
 
         .hero {
@@ -52,31 +57,37 @@
             overflow: hidden;
         }
 
-        /* Background Graphics */
+        /* Background Graphics - Subtle Light Mesh */
         .bg-gradient {
             position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(79, 70, 229, 0.05) 0%, transparent 70%);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: -1;
-            filter: blur(80px);
         }
 
         h1 {
             font-size: 4.5rem;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, white 0%, #cbd5e1 100%);
+            color: var(--text-dark);
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
             font-size: 1.5rem;
-            color: #94a3b8;
+            color: var(--text-muted);
             max-width: 700px;
             margin-bottom: 4rem;
             font-weight: 300;
@@ -92,8 +103,8 @@
         }
 
         .product-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
             border-radius: 20px;
             padding: 2.5rem;
             text-align: left;
@@ -101,15 +112,15 @@
             position: relative;
             overflow: hidden;
             text-decoration: none;
-            color: white;
+            color: var(--text-dark);
             display: block;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
         }
 
         .product-card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+            border-color: #cbd5e1;
         }
 
         .product-icon {
@@ -123,7 +134,7 @@
             font-size: 1.8rem;
             color: white;
             margin-bottom: 1.5rem;
-            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.2);
         }
 
         .product-tag {
@@ -149,7 +160,7 @@
         }
 
         .product-desc {
-            color: #94a3b8;
+            color: var(--text-muted);
             font-size: 1rem;
             line-height: 1.5;
         }
@@ -158,7 +169,7 @@
             display: inline-flex;
             align-items: center;
             margin-top: 1.5rem;
-            color: white;
+            color: var(--accent-purple);
             font-weight: 600;
             font-size: 0.95rem;
         }
@@ -175,9 +186,9 @@
         footer {
             padding: 2rem;
             text-align: center;
-            color: #475569;
+            color: var(--text-muted);
             font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid var(--card-border);
             margin-top: auto;
         }
 
@@ -201,7 +212,8 @@
     </nav>
 
     <main class="hero">
-        <h1>Textiles + Software</h1>
+        <h1>Textiles + <span style="background:none;-webkit-text-fill-color: initial; color: #1e293b;">Software</span>
+        </h1>
         <p class="subtitle">
             Somos una agencia especializada en digitalizar la industria de la moda y confección.
             Creamos herramientas que entienden tu proceso productivo.
@@ -224,18 +236,18 @@
                 </div>
             </a>
 
-            <!-- Producto 2: Próximamente -->
-            <div class="product-card" style="opacity: 0.5; cursor: default;">
+            <!-- Producto 2: Sylu (Nuevo Concepto) -->
+            <div class="product-card" style="opacity: 0.9; cursor: default; border-style: dashed;">
                 <span class="product-tag"
-                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #94a3b8;">En
-                    Desarrollo</span>
-                <div class="product-icon" style="background: #334155; box-shadow: none;">
-                    <i class="fa-solid fa-store"></i>
+                    style="background: rgba(236, 72, 153, 0.1); color: #db2777; border-color: rgba(236, 72, 153, 0.2);">Próximamente</span>
+                <div class="product-icon" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                    <i class="fa-solid fa-bezier-curve"></i>
                 </div>
-                <h3 class="product-title">Yacha Shop</h3>
+                <h3 class="product-title">Sylu</h3>
                 <p class="product-desc">
-                    E-commerce B2B para insumos textiles. Conecta proveedores de tela con talleres de confección
-                    directamente.
+                    <strong>Digitaliza tus moldes con una foto.</strong><br>
+                    Algoritmos de visión computarizada de alta precisión que detectan bordes y generan vectores listos
+                    para imprimir. Del cartón físico al digital en segundos.
                 </p>
             </div>
         </div>
