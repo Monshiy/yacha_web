@@ -4,100 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yacha - Gestión Textil Inteligente</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yacha | Agencia Digital Textil</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --text-light: #f8fafc;
+            --accent-cyan: #06b6d4;
+            --accent-purple: #8b5cf6;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: white;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background Graphics */
+        .bg-gradient {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, white 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin-bottom: 4rem;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .product-desc {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .arrow-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            color: white;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .arrow-link i {
+            margin-left: 8px;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover .arrow-link i {
+            transform: translateX(5px);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: #475569;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="background-glow"></div>
+    <div class="bg-gradient"></div>
 
     <nav class="navbar">
         <div class="logo">Yacha</div>
-        <a href="https://app.yacha.pe" class="btn-web-nav" target="_blank"
-            style="text-decoration: none; color: #4F46E5; font-weight: 600; padding: 8px 16px; border: 1px solid #E0E7FF; border-radius: 8px; font-size: 0.9rem; transition: all 0.2s;">
-            <i class="fa-solid fa-globe" style="margin-right: 6px;"></i>Abrir Web App
-        </a>
     </nav>
 
-    <main class="hero-section">
-        <div class="content-wrapper">
-            <div class="text-content">
-                <span class="badge">Gestión Textil v1.0</span>
-                <h1>Control total de tu <span class="gradient-text">Taller de Confección</span></h1>
-                <p class="hero-description">
-                    Optimiza la producción de prendas. Desde el corte hasta el despacho, gestiona movimientos,
-                    costureros y tiempos en una sola agenda inteligente.
+    <main class="hero">
+        <h1>Textiles + Software</h1>
+        <p class="subtitle">
+            Somos una agencia especializada en digitalizar la industria de la moda y confección.
+            Creamos herramientas que entienden tu proceso productivo.
+        </p>
+
+        <div class="products-grid">
+            <!-- Producto 1: Lumy -->
+            <a href="/lumy" class="product-card">
+                <span class="product-tag">Lanzamiento</span>
+                <div class="product-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="product-title">Lumy</h3>
+                <p class="product-desc">
+                    Sistema integral de gestión de producción para talleres. Trazabilidad, inventario y control de
+                    costureros en una sola plataforma.
                 </p>
-
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <i class="fa-solid fa-scissors"></i>
-                        <span>Registro de Cortes</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fa-solid fa-truck-ramp-box"></i>
-                        <span>Envíos y Retornos</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <span>Agenda Diaria</span>
-                    </div>
+                <div class="arrow-link">
+                    Ver Detalles <i class="fa-solid fa-arrow-right"></i>
                 </div>
+            </a>
 
-                <div class="cta-container">
-                    <div class="cta-group">
-                        <a href="instalar/Lumy.msix" class="btn-primary">
-                            <i class="fa-brands fa-windows"></i>
-                            <span>2. Descargar App (.msix)</span>
-                        </a>
-
-                        <a href="instalar/certificado.zip" class="btn-secondary">
-                            <i class="fa-solid fa-shield-halved"></i>
-                            <span>1. Instalar Certificado</span>
-                        </a>
-                    </div>
-                    <p class="install-note">Requiere instalar certificado primero (si no es oficial).<br>Windows 10
-                        Versión 1809 o superior.</p>
+            <!-- Producto 2: Próximamente -->
+            <div class="product-card" style="opacity: 0.5; cursor: default;">
+                <span class="product-tag"
+                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: #94a3b8;">En
+                    Desarrollo</span>
+                <div class="product-icon" style="background: #334155; box-shadow: none;">
+                    <i class="fa-solid fa-store"></i>
                 </div>
-            </div>
-
-            <div class="visual-content">
-                <div class="app-card">
-                    <div class="card-header">
-                        <div class="dot red"></div>
-                        <div class="dot yellow"></div>
-                        <div class="dot green"></div>
-                    </div>
-                    <div class="card-body">
-                        <!-- Abstract representation of the UI -->
-                        <div class="ui-mockup">
-                            <div class="mockup-sidebar"></div>
-                            <div class="mockup-main">
-                                <div class="mockup-header"></div>
-                                <div class="mockup-row"></div>
-                                <div class="mockup-row"></div>
-                                <div class="mockup-row short"></div>
-                            </div>
-                            <!-- Floating Elements -->
-                            <div class="float-card calendar-card">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <span>Agenda Lista</span>
-                            </div>
-                            <div class="float-card task-card">
-                                <i class="fa-solid fa-list-check"></i>
-                                <span>Seguimiento</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="product-title">Yacha Shop</h3>
+                <p class="product-desc">
+                    E-commerce B2B para insumos textiles. Conecta proveedores de tela con talleres de confección
+                    directamente.
+                </p>
             </div>
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        © 2026 Yacha | Transformando la industria textil peruana
+    </footer>
 </body>
 
 </html>

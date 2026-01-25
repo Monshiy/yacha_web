@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumy - Gestión Textil por Yacha</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">Lumy <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-secondary);">by
+                Yacha</span></div>
+        <a href="#" class="btn-web-nav"
+            onclick="alert('El acceso Web estará disponible muy pronto. ¡Estamos ultimando detalles!'); return false;"
+            style="text-decoration: none; color: #94a3b8; font-weight: 600; padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; transition: all 0.2s; cursor: not-allowed;">
+            <i class="fa-solid fa-lock" style="margin-right: 6px;"></i>Acceso Web (Pronto)
+        </a>
+    </nav>
+
+    <main class="hero-section">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <span class="badge badge-beta">🚀 Estamos en Lanzamiento</span>
+                <h1>Control total de tu <span class="gradient-text">Taller de Confección</span></h1>
+                <p class="hero-description">
+                    <strong>¡El sistema está listo para trabajar!</strong> Ya puedes controlar tus prendas, producciones
+                    y
+                    costureros sin problemas. <br>
+                    Al ser una versión nueva, seguimos mejorando "detalles de pintura" cada semana. Úsala con confianza
+                    y si ves algo por mejorar, tu opinión cuenta mucho para nosotros.
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-scissors"></i>
+                        <span>Registro de Cortes</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <span>Envíos y Retornos</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span>Agenda Diaria</span>
+                    </div>
+                </div>
+
+                <div class="cta-container">
+                    <p class="install-note"
+                        style="margin-bottom: 0.5rem; font-weight: 600; color: var(--accent-color);">
+                        <i class="fa-solid fa-clock"></i> Muy pronto disponible para descarga:
+                    </p>
+                    <div class="cta-group">
+                        <a href="#" class="btn-primary"
+                            onclick="alert('La versión de Windows estará disponible muy pronto. ¡Gracias por tu paciencia!'); return false;"
+                            style="background: #cbd5e1; border-color: #cbd5e1; cursor: not-allowed; box-shadow: none;">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows (Escritorio)</span>
+                        </a>
+
+                        <a href="#" class="btn-secondary"
+                            onclick="alert('La versión Android estará disponible muy pronto.'); return false;"
+                            style="opacity: 0.6; cursor: not-allowed;">
+                            <i class="fa-brands fa-android"></i>
+                            <span>Android (APK)</span>
+                        </a>
+                    </div>
+                    <p class="install-note">Estamos preparando los instaladores oficiales para ti.</p>
+                </div>
+            </div>
+
+            <div class="visual-content">
+                <div class="app-card">
+                    <div class="card-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Abstract representation of the UI -->
+                        <div class="ui-mockup">
+                            <div class="mockup-sidebar"></div>
+                            <div class="mockup-main">
+                                <div class="mockup-header"></div>
+                                <div class="mockup-row"></div>
+                                <div class="mockup-row"></div>
+                                <div class="mockup-row short"></div>
+                            </div>
+                            <!-- Floating Elements -->
+                            <div class="float-card calendar-card">
+                                <i class="fa-solid fa-calendar-day"></i>
+                                <span>Agenda Lista</span>
+                            </div>
+                            <div class="float-card task-card">
+                                <i class="fa-solid fa-list-check"></i>
+                                <span>Seguimiento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- SECCIÓN: FUNCIONALIDADES CLAVE (BENTO GRID) -->
+    <section class="section-padding" style="background: white;">
+        <div class="section-header">
+            <h2 class="section-title">Más que un Excel, <span class="gradient-text">un sistema vivo</span></h2>
+            <p class="section-subtitle">
+                Lumy conecta todas las áreas de tu taller en tiempo real. Olvida los cuadernos perdidos y el "¿dónde
+                está ese lote?".
+            </p>
+        </div>
+
+        <div class="bento-grid">
+            <!-- Card 1: Etapas Flexibles -->
+            <div class="bento-card">
+                <div class="bento-icon">
+                    <i class="fa-solid fa-route"></i>
+                </div>
+                <h3 class="bento-title">Etapas Personalizables</h3>
+                <p class="bento-text">
+                    Tú defines el flujo. Agrega, quita u ordena las etapas según el modelo. El sistema respeta tus
+                    procesos, manteniendo "Corte" y "Despacho" como pilares de validación.
+                </p>
+            </div>
+
+            <!-- Card 2: Precisión Real -->
+            <div class="bento-card">
+                <div class="bento-icon">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <h3 class="bento-title">Pedido vs. Corte Real</h3>
+                <p class="bento-text">
+                    A veces lo que se corta no es igual a lo que se pide. Registra cantidades diferenciadas por talla y
+                    color. Controla ajustes si hubo errores en el corte inicial.
+                </p>
+            </div>
+
+            <!-- Card 3: Control de Taller -->
+            <div class="bento-card">
+                <div class="bento-icon">
+                    <i class="fa-solid fa-person-circle-exclamation"></i>
+                </div>
+                <h3 class="bento-title">Movimientos y Mermas</h3>
+                <p class="bento-text">
+                    Control absoluto de salidas a costureros y retornos. Registra mermas y prendas falladas
+                    específicamente para que tu inventario siempre cuadre al final del día.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: DETALLE VISUAL -->
+    <section class="section-padding" style="background: var(--bg-color);">
+        <!-- Feature 1 -->
+        <div class="feature-row">
+            <div class="feature-text">
+                <span class="feature-tag">Organización Total</span>
+                <h3 class="feature-h3">Agenda Diaria y Notas "To-Do"</h3>
+                <p class="feature-p">
+                    Más que un calendario. Visualiza qué etapas vencen hoy y gestiona tus pendientes con un sistema de
+                    notas integrado (estilo Microsoft To-Do). Asigna fechas a tus recordatorios para compras o pagos y
+                    mantén tu mente despejada.
+                </p>
+            </div>
+            <div class="feature-visual">
+                <div class="ui-mockup" style="transform: scale(0.9);">
+                    <!-- Representación abstracta de calendario -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%;">
+                        <div
+                            style="background: rgba(79, 70, 229, 0.1); height: 80px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-check" style="color: #4f46e5;"></i>
+                        </div>
+                        <div style="background: white; border: 1px solid #e2e8f0; height: 80px; border-radius: 12px;">
+                        </div>
+                        <div style="background: white; border: 1px solid #e2e8f0; height: 80px; border-radius: 12px;">
+                        </div>
+                        <div style="background: white; border: 1px solid #e2e8f0; height: 80px; border-radius: 12px;">
+                        </div>
+                        <div
+                            style="background: rgba(255, 189, 46, 0.2); height: 80px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-regular fa-note-sticky" style="color: #d97706;"></i>
+                        </div>
+                        <div style="background: white; border: 1px solid #e2e8f0; height: 80px; border-radius: 12px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-row reverse">
+            <div class="feature-text">
+                <span class="feature-tag">Administración</span>
+                <h3 class="feature-h3">Maestros y Seguridad</h3>
+                <p class="feature-p">
+                    Gestiona tu base de datos sin depender de nadie. Crea modelos, clientes, costureros, colores y
+                    tallas a tu gusto. Además, controla el acceso de tu personal con roles diferenciados (Administrador
+                    y
+                    Usuario) para proteger tu información.
+                </p>
+            </div>
+            <div class="feature-visual">
+                <i class="fa-solid fa-shield-halved" style="font-size: 8rem; color: #e2e8f0;"></i>
+                <div class="float-card" style="top: auto; right: auto;">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <span>Roles de Usuario</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    </section>
+
+
+    <!-- SECCIÓN: PRECIOS (CTA) -->
+    <section class="section-padding" style="background: var(--bg-color);">
+        <div class="section-header">
+            <h2 class="section-title">Invierte en tu <span class="gradient-text">tranquilidad</span></h2>
+            <p class="section-subtitle">
+                Prueba el sistema completo sin compromiso. Si te ayuda a organizar tu taller, entonces hablamos de pago.
+            </p>
+        </div>
+
+        <div class="pricing-card">
+            <div class="pricing-badge">PROMO</div>
+            <h3 style="font-size: 1.5rem; color: var(--text-secondary);">Suscripción Mensual</h3>
+            <div class="price-amount">S/ 30<span style="font-size: 1.5rem;">.00</span></div>
+            <div class="price-period">al mes</div>
+
+            <div class="pricing-features">
+                <div class="pricing-feature">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span><strong>15 Días de Prueba Gratis</strong></span>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Usuarios y Producciones Ilimitadas</span>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Soporte Prioritario por WhatsApp</span>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fa-solid fa-check-circle"></i>
+                    <span>Acceso a nuevas funciones (Roadmap)</span>
+                </div>
+            </div>
+
+            <a href="instalar/Lumy.msix" class="btn-primary" style="width: 100%; justify-content: center;">
+                Comenzar Prueba Gratis
+            </a>
+
+            <div class="yape-note">
+                <i class="fa-solid fa-qrcode"></i>
+                Pagos fáciles vía <strong>Yape/Plin</strong> directamente en la app al terminar tu prueba.
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: EVOLUCIÓN / ROADMAP -->
+    <section class="section-padding">
+        <div class="roadmap-container">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <h2 class="section-title" style="font-size: 2rem;">Un sistema que <span class="gradient-text">evoluciona
+                        paso a paso</span></h2>
+                <p class="section-subtitle">
+                    Yacha no es estático. Trabajamos continuamente para robustecer la herramienta con nuevas
+                    funcionalidades, asegurando estabilidad en cada actualización.
+                </p>
+            </div>
+
+            <div class="roadmap-grid">
+                <!-- Ítem 1: Futuro -->
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>En el horizonte</h4>
+                        <p>
+                            Nuestra prioridad es la calidad sobre la velocidad. Próximamente incorporaremos gestión de
+                            <strong>Tarifarios</strong> para automatizar cálculos de pagos, entre otras mejoras que
+                            llegarán progresivamente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ítem 2: Feedback -->
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fa-regular fa-comments"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Construcción Colaborativa</h4>
+                        <p>
+                            Escuchamos a nuestra comunidad. Todas las sugerencias son evaluadas técnicamente para
+                            decidir qué implementaciones aportarán valor real a la mayoría de talleres.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Yacha <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.7;">| Agencia
+                    Digital</span></div>
+            <div class="footer-links">
+                <a href="https://lumy.yacha.pe" target="_blank" class="footer-link">Web App</a>
+                <a href="instalar/Lumy.msix" class="footer-link">Descargar Desktop</a>
+                <span class="footer-link" style="opacity: 0.5; cursor: default;">© 2026 Yacha</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
