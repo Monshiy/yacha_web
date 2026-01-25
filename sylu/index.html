@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylu | Diseño Textil Inteligente</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Sylu Special Overrides */
+        :root {
+            --accent-color: #ec4899;
+            --gradient-start: #ec4899;
+            --gradient-end: #db2777;
+            --accent-glow: rgba(236, 72, 153, 0.2);
+            --bg-color: #fff1f2;
+        }
+
+        .navbar {
+            border-bottom: 1px solid rgba(236, 72, 153, 0.1);
+        }
+
+        .badge-beta {
+            background: rgba(236, 72, 153, 0.1);
+            color: #db2777;
+            border-color: rgba(236, 72, 153, 0.2);
+        }
+
+        .cta-container {
+            align-items: center;
+            /* Centered CTA for concept page */
+        }
+
+        .mockup-sidebar {
+            background: #ffe4e6;
+        }
+
+        .feature-item i {
+            color: #ec4899;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-glow"
+        style="background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 70%);"></div>
+
+    <nav class="navbar">
+        <div class="logo">Sylu <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-secondary);">by
+                Yacha</span></div>
+        <a href="https://yacha.pe" class="btn-web-nav"
+            style="text-decoration: none; color: #64748b; font-weight: 600; padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; transition: all 0.2s;">
+            <i class="fa-solid fa-arrow-left" style="margin-right: 6px;"></i>Volver a Yacha
+        </a>
+    </nav>
+
+    <main class="hero-section">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <span class="badge badge-beta">💡 En Fase de Concepto</span>
+                <h1>Digitaliza tus moldes <span class="gradient-text">en segundos</span></h1>
+                <p class="hero-description">
+                    <strong>Olvídate de trazar a mano en Corel.</strong><br>
+                    Sylu usa visión artificial para detectar los bordes de tus cartones físicos desde una sola foto y
+                    convertirlos en vectores precisos listos para tizar.
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Foto a Vector</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Escalado Automático</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-file-export"></i>
+                        <span>Exporta a DXF/PDF</span>
+                    </div>
+                </div>
+
+                <div class="cta-container">
+                    <p class="install-note"
+                        style="margin-bottom: 1rem; font-weight: 600; color: var(--accent-color); text-align: center;">
+                        ¿Te interesa esta tecnología?
+                    </p>
+                    <div class="cta-group">
+                        <a href="mailto:contacto@yacha.pe?subject=Interesado en Sylu" class="btn-primary"
+                            style="background: linear-gradient(135deg, #ec4899, #be185d); box-shadow: 0 10px 30px -10px rgba(236, 72, 153, 0.4);">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Unirme a la Lista de Espera</span>
+                        </a>
+                    </div>
+                    <p class="install-note" style="margin-top: 1rem;">Sé el primero en probarlo cuando lancemos la Beta.
+                    </p>
+                </div>
+            </div>
+
+            <div class="visual-content">
+                <!-- Abstract visual of photo scanning -->
+                <div class="app-card"
+                    style="height: 350px; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div
+                        style="position: absolute; inset: 0; background: url('https://img.freepik.com/free-vector/sewing-pattern-template_23-2148152554.jpg'); opacity: 0.05; background-size: cover;">
+                    </div>
+
+                    <!-- Phone Frame -->
+                    <div
+                        style="width: 180px; height: 320px; border: 4px solid #334155; border-radius: 20px; background: white; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.1); z-index: 2; overflow: hidden;">
+                        <!-- Camera View -->
+                        <div
+                            style="height: 100%; width: 100%; background: #f1f5f9; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-shirt" style="font-size: 4rem; color: #cbd5e1;"></i>
+
+                            <!-- Scanner Overlay -->
+                            <div
+                                style="position: absolute; width: 140px; height: 140px; border: 2px dashed #ec4899; border-radius: 10px; animation: scan 3s infinite;">
+                            </div>
+
+                            <div
+                                style="position: absolute; bottom: 20px; width: 50px; height: 50px; border-radius: 50%; border: 3px solid #ec4899; display: flex; align-items: center; justify-content: center;">
+                                <div style="width: 40px; height: 40px; background: #ec4899; border-radius: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Result -->
+                    <div class="float-card" style="top: 40px; right: 20px; animation: float 6s infinite;">
+                        <i class="fa-solid fa-bezier-curve" style="color: #ec4899;"></i>
+                        <span>Vector Generado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Sylu <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.7;">| Concepto
+                    por Yacha</span></div>
+            <div class="footer-links">
+                <a href="https://yacha.pe" class="footer-link">Volver a Agencia</a>
+                <span class="footer-link" style="opacity: 0.5; cursor: default;">© 2026 Yacha</span>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes scan {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</body>
+
+</html>
