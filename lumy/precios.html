@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios - Lumy ERP</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                Lumy <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-secondary);">by Yacha</span>
+            </a>
+        </div>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="precios.html"
+                style="text-decoration: none; color: var(--accent-color); font-weight: 700; font-size: 0.95rem;">Precios</a>
+            <a href="#" class="btn-web-nav"
+                onclick="alert('El acceso Web estará disponible muy pronto. ¡Estamos ultimando detalles!'); return false;"
+                style="text-decoration: none; color: #94a3b8; font-weight: 600; padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; transition: all 0.2s; cursor: not-allowed;">
+                <i class="fa-solid fa-lock" style="margin-right: 6px;"></i>Acceso Web (Pronto)
+            </a>
+        </div>
+    </nav>
+
+    <main class="section-padding" style="padding-top: 4rem;">
+        <div class="section-header">
+            <h1 class="section-title">Planes simples y <span class="gradient-text">transparentes</span></h1>
+            <p class="section-subtitle">
+                Sin costos ocultos. Elige el plan que mejor se adapte al flujo de caja de tu taller.
+                Todos los precios incluyen IGV y se emite Factura o Boleta electrónica.
+            </p>
+        </div>
+
+        <div class="bento-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; align-items: stretch;">
+
+            <!-- Plan Mensual -->
+            <div class="pricing-card"
+                style="margin: 0; max-width: none; border: 1px solid var(--border-color); box-shadow: none; background: white; padding: 2.5rem; display: flex; flex-direction: column;">
+                <h3
+                    style="font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; text-align: left;">
+                    Mensual</h3>
+                <div class="price-amount" style="font-size: 2.5rem; color: var(--text-primary); text-align: left;">S/
+                    30<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;"> /mes</span></div>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; text-align: left;">Pago
+                    mensual simple. Sin ataduras.</p>
+                <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+                    <div style="font-size: 0.9rem; color: var(--text-muted); text-align: left;">
+                        <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> Acceso
+                        total al sistema
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Semestral -->
+            <div class="pricing-card"
+                style="margin: 0; max-width: none; border: 1px solid var(--accent-color); background: rgba(79, 70, 229, 0.02); padding: 2.5rem; display: flex; flex-direction: column;">
+                <h3
+                    style="font-size: 1.25rem; font-weight: 600; color: var(--accent-color); margin-bottom: 0.5rem; text-align: left;">
+                    Semestral</h3>
+                <div class="price-amount" style="font-size: 2.5rem; color: var(--text-primary); text-align: left;">S/
+                    160<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;"> /6 meses</span>
+                </div>
+                <p
+                    style="color: #16a34a; font-size: 0.9rem; font-weight: 600; margin-top: 1rem; background: #dcfce7; display: inline-block; padding: 2px 8px; border-radius: 4px; align-self: flex-start;">
+                    Ahorras S/ 20.00</p>
+                <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid rgba(79, 70, 229, 0.1);">
+                    <div style="font-size: 0.9rem; color: var(--text-muted); text-align: left;">
+                        <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> Acceso
+                        total al sistema
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Anual -->
+            <div class="pricing-card"
+                style="margin: 0; max-width: none; border: 1px solid var(--border-color); box-shadow: none; background: white; padding: 2.5rem; display: flex; flex-direction: column;">
+                <h3
+                    style="font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; text-align: left;">
+                    Anual</h3>
+                <div class="price-amount" style="font-size: 2.5rem; color: var(--text-primary); text-align: left;">S/
+                    300<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;"> /año</span></div>
+                <p
+                    style="color: #16a34a; font-size: 0.9rem; font-weight: 600; margin-top: 1rem; background: #dcfce7; display: inline-block; padding: 2px 8px; border-radius: 4px; align-self: flex-start;">
+                    Ahorras S/ 60.00</p>
+                <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+                    <div style="font-size: 0.9rem; color: var(--text-muted); text-align: left;">
+                        <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> Acceso
+                        total al sistema
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <div class="yape-note" style="display: inline-block;">
+                <i class="fa-solid fa-shield-heart"></i>
+                <strong>Garantía de Satisfacción:</strong> Tienes 15 días de prueba gratis antes de realizar cualquier
+                pago.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Lumy <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.7;">| by
+                    Yacha</span></div>
+            <div class="footer-links">
+                <a href="https://lumy.yacha.pe" target="_blank" class="footer-link">Web App</a>
+                <a href="instalar/Lumy.msix" class="footer-link">Descargar Desktop</a>
+                <span class="footer-link" style="opacity: 0.5; cursor: default;">© 2026 Yacha</span>
+            </div>
+        </div>
+
+        <!-- Legal Section -->
+        <div class="footer-legal"
+            style="margin-top: 3rem; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 2rem; text-align: center; font-size: 0.85rem; color: var(--text-secondary); opacity: 0.8;">
+            <p style="margin: 0.2rem 0;">© 2026 Lumy ERP. Todos los derechos reservados.</p>
+            <p style="margin: 0.2rem 0;">Desarrollado por Moises Iriarte Oscco | RUC: 10705407016</p>
+            <p style="margin: 0.2rem 0;">San Juan de Lurigancho, Lima, Perú.</p>
+            <div style="margin-top: 0.5rem;">
+                <a href="terminos_condiciones/" class="footer-link"
+                    style="margin: 0 0.5rem; font-size: 0.8rem;">[Términos y
+                    Condiciones]</a> |
+                <a href="politica_privacidad/" class="footer-link"
+                    style="margin: 0 0.5rem; font-size: 0.8rem;">[Política de
+                    Privacidad]</a> |
+                <a href="#" class="footer-link" style="margin: 0 0.5rem; font-size: 0.8rem;">[Libro de Reclamaciones
+                    📖]</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

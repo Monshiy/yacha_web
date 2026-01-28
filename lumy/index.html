@@ -18,11 +18,17 @@
     <nav class="navbar">
         <div class="logo">Lumy <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-secondary);">by
                 Yacha</span></div>
-        <a href="#" class="btn-web-nav"
-            onclick="alert('El acceso Web estará disponible muy pronto. ¡Estamos ultimando detalles!'); return false;"
-            style="text-decoration: none; color: #94a3b8; font-weight: 600; padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; transition: all 0.2s; cursor: not-allowed;">
-            <i class="fa-solid fa-lock" style="margin-right: 6px;"></i>Acceso Web (Pronto)
-        </a>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="precios.html"
+                style="text-decoration: none; color: var(--text-secondary); font-weight: 600; font-size: 0.95rem; transition: color 0.2s;"
+                onmouseover="this.style.color='var(--accent-color)'"
+                onmouseout="this.style.color='var(--text-secondary)'">Precios</a>
+            <a href="#" class="btn-web-nav"
+                onclick="alert('El acceso Web estará disponible muy pronto. ¡Estamos ultimando detalles!'); return false;"
+                style="text-decoration: none; color: #94a3b8; font-weight: 600; padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.9rem; transition: all 0.2s; cursor: not-allowed;">
+                <i class="fa-solid fa-lock" style="margin-right: 6px;"></i>Acceso Web (Pronto)
+            </a>
+        </div>
     </nav>
 
     <main class="hero-section">
@@ -224,50 +230,7 @@
     </section>
 
 
-    <!-- SECCIÓN: PRECIOS (CTA) -->
-    <section class="section-padding" style="background: var(--bg-color);">
-        <div class="section-header">
-            <h2 class="section-title">Invierte en tu <span class="gradient-text">tranquilidad</span></h2>
-            <p class="section-subtitle">
-                Prueba el sistema completo sin compromiso. Si te ayuda a organizar tu taller, entonces hablamos de pago.
-            </p>
-        </div>
 
-        <div class="pricing-card">
-            <div class="pricing-badge">PROMO</div>
-            <h3 style="font-size: 1.5rem; color: var(--text-secondary);">Suscripción Mensual</h3>
-            <div class="price-amount">S/ 30<span style="font-size: 1.5rem;">.00</span></div>
-            <div class="price-period">al mes</div>
-
-            <div class="pricing-features">
-                <div class="pricing-feature">
-                    <i class="fa-solid fa-check-circle"></i>
-                    <span><strong>15 Días de Prueba Gratis</strong></span>
-                </div>
-                <div class="pricing-feature">
-                    <i class="fa-solid fa-check-circle"></i>
-                    <span>Usuarios y Producciones Ilimitadas</span>
-                </div>
-                <div class="pricing-feature">
-                    <i class="fa-solid fa-check-circle"></i>
-                    <span>Soporte Prioritario por WhatsApp</span>
-                </div>
-                <div class="pricing-feature">
-                    <i class="fa-solid fa-check-circle"></i>
-                    <span>Acceso a nuevas funciones (Roadmap)</span>
-                </div>
-            </div>
-
-            <a href="instalar/Lumy.msix" class="btn-primary" style="width: 100%; justify-content: center;">
-                Comenzar Prueba Gratis
-            </a>
-
-            <div class="yape-note">
-                <i class="fa-solid fa-qrcode"></i>
-                Pagos fáciles vía <strong>Yape/Plin</strong> directamente en la app al terminar tu prueba.
-            </div>
-        </div>
-    </section>
 
     <!-- SECCIÓN: EVOLUCIÓN / ROADMAP -->
     <section class="section-padding">
@@ -317,12 +280,30 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">Yacha <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.7;">| Agencia
-                    Digital</span></div>
+            <div class="footer-logo">Lumy <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.7;">| by
+                    Yacha</span></div>
             <div class="footer-links">
                 <a href="https://lumy.yacha.pe" target="_blank" class="footer-link">Web App</a>
                 <a href="instalar/Lumy.msix" class="footer-link">Descargar Desktop</a>
                 <span class="footer-link" style="opacity: 0.5; cursor: default;">© 2026 Yacha</span>
+            </div>
+        </div>
+
+        <!-- Legal Section -->
+        <div class="footer-legal"
+            style="margin-top: 3rem; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 2rem; text-align: center; font-size: 0.85rem; color: var(--text-secondary); opacity: 0.8;">
+            <p style="margin: 0.2rem 0;">© 2026 Lumy ERP. Todos los derechos reservados.</p>
+            <p style="margin: 0.2rem 0;">Desarrollado por Moises Iriarte Oscco | RUC: 10705407016</p>
+            <p style="margin: 0.2rem 0;">San Juan de Lurigancho, Lima, Perú.</p>
+            <div style="margin-top: 0.5rem;">
+                <a href="terminos_condiciones/" class="footer-link"
+                    style="margin: 0 0.5rem; font-size: 0.8rem;">[Términos y
+                    Condiciones]</a> |
+                <a href="politica_privacidad/" class="footer-link"
+                    style="margin: 0 0.5rem; font-size: 0.8rem;">[Política de
+                    Privacidad]</a> |
+                <a href="#" class="footer-link" style="margin: 0 0.5rem; font-size: 0.8rem;">[Libro de Reclamaciones
+                    📖]</a>
             </div>
         </div>
     </footer>
