@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
-    Uri="https://yacha.pe/app/yacha.appinstaller"
+    Uri="https://yacha.pe/app/lumy/yacha.appinstaller"
     Version="1.0.0.0"
     xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
     <MainPackage
         Name="YachaApp"
         Publisher="CN=Lumy"
         Version="1.0.0.0"
-        Uri="https://yacha.pe/app/Lumy.msix" />
+        Uri="https://yacha.pe/app/lumy/Lumy.msix" />
     <UpdateSettings>
         <OnLaunch 
             HoursBetweenUpdateChecks="0" />
