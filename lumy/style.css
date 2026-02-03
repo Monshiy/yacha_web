@@ -885,8 +885,10 @@ footer {
 
 /* Phone Frame (Android Style) */
 .phone-frame {
-    width: 280px;
-    height: 580px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 280/580;
     background: #1e1e1e;
     /* Dark bezel */
     border-radius: 24px;
@@ -944,11 +946,13 @@ footer {
 .desktop-preview {
     flex: 2;
     max-width: 600px;
+    min-width: 0;
 }
 
 .mobile-preview {
     flex: 1;
     max-width: 280px;
+    min-width: 0;
     margin-top: 4rem;
     /* Offset for visual interest */
     transform: translateY(20px);
@@ -966,6 +970,7 @@ footer {
         transform: none;
     }
 }
+
 /* Pricing Grid Responsive */
 .pricing-grid {
     display: grid;
@@ -981,9 +986,11 @@ footer {
         grid-template-columns: 1fr;
         padding: 0 1rem;
     }
+
     .pricing-card {
         padding: 1.5rem !important;
     }
+
     .section-padding {
         padding: 4rem 1rem !important;
     }
